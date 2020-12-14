@@ -22,11 +22,12 @@ def __tar__():
         target = "http://" + target
     s1 = target + "/wp-content/plugins/"
     if s1.status_code == 404 or s.status_code == 500:
+       
         print(Fore.RED + "\n[-] ~ Error : Your Target Is Not WordPress ;(")
         time.sleep(1)
         sys.exit()
-    else:
-        print(Fore.GREEN + "\n[+] ~ Ok Your Target Is Word Press ;)"
+    
+    print(Fore.GREEN + "\n[+] ~ Ok Your Target Is Word Press ;)"
     
     my_list = ["xmlrpc.php" , "xmlrpc.login" , "xmlrpc" , "xmlrpc.admin" , "xmlrpc.robot.txt", "xmlrpc.bot" , "xmlrpc.search"]
               
