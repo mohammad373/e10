@@ -6,6 +6,7 @@ import socket
 import requests 
 from colorama import Fore
 def __tar__():
+    my_list = ["xmlrpc.php" , "xmlrpc.login" , "xmlrpc" , "xmlrpc.admin" , "xmlrpc.robot.txt", "xmlrpc.bot" , "xmlrpc.search"]
     os.system("clear")
     print(Fore.RED + "Hello , Welcome Back ;)")
     time.sleep(0.4)
@@ -29,7 +30,7 @@ def __tar__():
     
     print(Fore.GREEN + "\n[+] ~ Ok Your Target Is Word Press ;)"
     
-    my_list = ["xmlrpc.php" , "xmlrpc.login" , "xmlrpc" , "xmlrpc.admin" , "xmlrpc.robot.txt", "xmlrpc.bot" , "xmlrpc.search"]
+   
               
               
     for n in my_list:
