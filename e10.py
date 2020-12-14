@@ -19,7 +19,7 @@ def __tar__():
         except:
             pass
     my_list = ["xmlrpc.php" , "xmlrpc.login" , "xmlrpc" , "xmlrpc.admin" , "xmlrpc.robot.txt", "xmlrpc.bot" , "xmlrpc.search"]
-    if not "http" in target + not "https" in target:
+    if not "http" in target or not "https" in target:
         target = "http://" + target
     s = target + "/wp-content/plugins/"
     if s.status_code == 404 or s.status_code == 500:
