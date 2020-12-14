@@ -23,13 +23,10 @@ def __tar__():
         target = "http://" + target
     s = target + "/wp-content/plugins/"
     if s.status_code == 404 or s.status_code == 500:
-     try:   
-        time.sleep(1)
-        print(Fore.RED + "[-] ~ Error : Your Target Is Not Word Press ;(")
-        time.sleep(1)
-        sys.exit()
-     except:
-         pass   
+            time.sleep(1)
+            print(Fore.RED + "[-] ~ Error : Your Target Is Not Word Press ;(")
+            time.sleep(1)
+            sys.exit()
     else:
         time.sleep(1)
         print(Fore.GREEN + "[+] ~ Ok , Your Target Is WordPress ;)")
