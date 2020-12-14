@@ -21,17 +21,17 @@ def __tar__():
     my_list = ["xmlrpc.php" , "xmlrpc.login" , "xmlrpc" , "xmlrpc.admin" , "xmlrpc.robot.txt", "xmlrpc.bot" , "xmlrpc.search"]
     if not "http" in target or not "https" in target:
         target = "http://" + target
-    s = target + "/wp-content/plugins/"
-    if s.status_code == 404 or s.status_code == 500:
-            time.sleep(1)
-            print(Fore.RED + "[-] ~ Error : Your Target Is Not Word Press ;(")
-            time.sleep(1)
-            sys.exit()
-    else:
-        time.sleep(1)
-        print(Fore.GREEN + "[+] ~ Ok , Your Target Is WordPress ;)")
-        time.sleep(0.4)
-        sys.exit()
+    #s = target + "/wp-content/plugins/"
+    #if s.status_code == 404 or s.status_code == 500:
+    #        time.sleep(1)
+     #       print(Fore.RED + "[-] ~ Error : Your Target Is Not Word Press ;(")
+     #       time.sleep(1)
+      #      sys.exit()
+   # else:
+    #    time.sleep(1)
+     #   print(Fore.GREEN + "[+] ~ Ok , Your Target Is WordPress ;)")
+      #  time.sleep(0.4)
+       # sys.exit()
     for i in my_list:
         t = target + "/" + i
         r = requests.get(t)
