@@ -21,14 +21,14 @@ def __tar__():
             pass
     if not "http" in target or not "https" in target:
         target = "http://" + target
-    s1 = target + "/wp-content/plugins/"
-    if s1.status_code == 404 or s.status_code == 500:
+    #s1 = target + "/wp-content/plugins/"
+    #if s1.status_code == 404 or s.status_code == 500:
        
-        print(Fore.RED + "\n[-] ~ Error : Your Target Is Not WordPress ;(")
-        time.sleep(1)
-        sys.exit()
+      #  print(Fore.RED + "\n[-] ~ Error : Your Target Is Not WordPress ;(")
+     #   time.sleep(1)
+    #    sys.exit()
     
-    print(Fore.GREEN + "\n[+] ~ Ok Your Target Is Word Press ;)"
+   #print(Fore.GREEN + "\n[+] ~ Ok Your Target Is Word Press ;)"
     
    
               
