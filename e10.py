@@ -28,7 +28,6 @@ def __tar__():
         sys.exit()
     else:
         print(Fore.GREEN + "\n[+] ~ Ok Your Target Is Word Press ;)"
-        time.sleep(1)
     for i in my_list:
         t = target + "/" + i
         r = requests.get(t)
