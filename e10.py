@@ -18,7 +18,6 @@ def __tar__():
             sys.exit()
         except:
             pass
-    my_list = ["xmlrpc.php" , "xmlrpc.login" , "xmlrpc" , "xmlrpc.admin" , "xmlrpc.robot.txt", "xmlrpc.bot" , "xmlrpc.search"]
     if not "http" in target or not "https" in target:
         target = "http://" + target
     s1 = target + "/wp-content/plugins/"
@@ -28,6 +27,7 @@ def __tar__():
         sys.exit()
     else:
         print(Fore.GREEN + "\n[+] ~ Ok Your Target Is Word Press ;)"
+    my_list = ["xmlrpc.php" , "xmlrpc.login" , "xmlrpc" , "xmlrpc.admin" , "xmlrpc.robot.txt", "xmlrpc.bot" , "xmlrpc.search"]
     for i in my_list:
         t = target + "/" + i
         r = requests.get(t)
