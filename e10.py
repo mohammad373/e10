@@ -22,7 +22,7 @@ def __tar__():
     if not "http" in target or not "https" in target:
         target = "http://" + target
     s1 = target + "/wp-content/plugins/"
-    is s1.status_code == 404 or s.status_code == 500:
+    if s1.status_code == 404 or s.status_code == 500:
         print(Fore.RED + "\n[-] ~ Error : Your Target Is Not WordPress ;(")
         time.sleep(1)
         sys.exit()
