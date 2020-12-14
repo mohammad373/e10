@@ -27,9 +27,12 @@ def __tar__():
         sys.exit()
     else:
         print(Fore.GREEN + "\n[+] ~ Ok Your Target Is Word Press ;)"
+    
     my_list = ["xmlrpc.php" , "xmlrpc.login" , "xmlrpc" , "xmlrpc.admin" , "xmlrpc.robot.txt", "xmlrpc.bot" , "xmlrpc.search"]
-    for i in my_list:
-        t = target + "/" + i
+              
+              
+    for n in my_list:
+        t = target + "/" + n
         r = requests.get(t)
         if r.status_code == 200:
             print(Fore.GREEN + "[+] ~ " + Fore.GREEN + t)
